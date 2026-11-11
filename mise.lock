@@ -3,50 +3,51 @@
 lockfile_version = 4
 
 [[tools.air]]
-version = "1.66.1"
+version = "1.67.4"
 backend = "aqua:air-verse/air"
-specifiers = ["1.66.1"]
+specifiers = ["1.67.4"]
 
 [tools.air."platforms.linux-arm64"]
-checksum = "sha256:b1f92a80ca54ad10734baefa3133c2c40dfd4b8f44a98b080154a622fc14890e"
+checksum = "sha256:3b138e3cc01c6f1f077f555baa1db45215c02f1aa57db8ab0b5b082a76a45743"
 checksum_source = "mise-versions"
-url = "https://github.com/air-verse/air/releases/download/v1.66.1/air_1.66.1_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/air-verse/air/releases/assets/483375485"
+url = "https://github.com/air-verse/air/releases/download/v1.67.4/air_1.67.4_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/air-verse/air/releases/assets/497980607"
 
 [tools.air."platforms.linux-arm64-musl"]
-checksum = "sha256:b1f92a80ca54ad10734baefa3133c2c40dfd4b8f44a98b080154a622fc14890e"
+checksum = "sha256:3b138e3cc01c6f1f077f555baa1db45215c02f1aa57db8ab0b5b082a76a45743"
 checksum_source = "mise-versions"
-url = "https://github.com/air-verse/air/releases/download/v1.66.1/air_1.66.1_linux_arm64.tar.gz"
-url_api = "https://api.github.com/repos/air-verse/air/releases/assets/483375485"
+url = "https://github.com/air-verse/air/releases/download/v1.67.4/air_1.67.4_linux_arm64.tar.gz"
+url_api = "https://api.github.com/repos/air-verse/air/releases/assets/497980607"
 
 [tools.air."platforms.linux-x64"]
-checksum = "sha256:f1c7a48ba4251fce7568b670cb7be403c755a1129b90ad94ba4918cf6cab4b04"
+checksum = "sha256:c8cc405210e557e2681275688ce700441eac53db9fb42bb58764874ee9aa783d"
 checksum_source = "mise-versions"
-url = "https://github.com/air-verse/air/releases/download/v1.66.1/air_1.66.1_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/air-verse/air/releases/assets/483375516"
+url = "https://github.com/air-verse/air/releases/download/v1.67.4/air_1.67.4_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/air-verse/air/releases/assets/497980662"
 
 [tools.air."platforms.linux-x64-musl"]
-checksum = "sha256:f1c7a48ba4251fce7568b670cb7be403c755a1129b90ad94ba4918cf6cab4b04"
+checksum = "sha256:c8cc405210e557e2681275688ce700441eac53db9fb42bb58764874ee9aa783d"
 checksum_source = "mise-versions"
-url = "https://github.com/air-verse/air/releases/download/v1.66.1/air_1.66.1_linux_amd64.tar.gz"
-url_api = "https://api.github.com/repos/air-verse/air/releases/assets/483375516"
+url = "https://github.com/air-verse/air/releases/download/v1.67.4/air_1.67.4_linux_amd64.tar.gz"
+url_api = "https://api.github.com/repos/air-verse/air/releases/assets/497980662"
 
 [tools.air."platforms.macos-arm64"]
-checksum = "sha256:fe5ba2d942daab72f63a32372cb432dfa8a009b49f7852346137fa1f25098f5c"
-url = "https://github.com/air-verse/air/releases/download/v1.66.1/air_1.66.1_darwin_arm64.tar.gz"
-url_api = "https://api.github.com/repos/air-verse/air/releases/assets/483375494"
+checksum = "sha256:377e3f6ad87dc27a1fe665a78229c619188cf70d05ddc24d62ba065ee0824934"
+checksum_source = "mise-versions"
+url = "https://github.com/air-verse/air/releases/download/v1.67.4/air_1.67.4_darwin_arm64.tar.gz"
+url_api = "https://api.github.com/repos/air-verse/air/releases/assets/497980659"
 
 [tools.air."platforms.macos-x64"]
-checksum = "sha256:c6ca5d0f4b4211e605282a98019c0568f0f2246338577757122a91dc546b500e"
+checksum = "sha256:a6eccc0afea79497d74edb2f0fc603fd518ac9825a83e487d9e419ee5786035c"
 checksum_source = "mise-versions"
-url = "https://github.com/air-verse/air/releases/download/v1.66.1/air_1.66.1_darwin_amd64.tar.gz"
-url_api = "https://api.github.com/repos/air-verse/air/releases/assets/483375514"
+url = "https://github.com/air-verse/air/releases/download/v1.67.4/air_1.67.4_darwin_amd64.tar.gz"
+url_api = "https://api.github.com/repos/air-verse/air/releases/assets/497980660"
 
 [tools.air."platforms.windows-x64"]
-checksum = "sha256:96f2b85b34299e2d7087b148b3ee269e105a32ca3db85c596182b1de54aab986"
+checksum = "sha256:c35dbd568cff98055cc382d003bfda06bcdae82389568fb5e60ce5da278fa79d"
 checksum_source = "mise-versions"
-url = "https://github.com/air-verse/air/releases/download/v1.66.1/air_1.66.1_windows_amd64.tar.gz"
-url_api = "https://api.github.com/repos/air-verse/air/releases/assets/483375484"
+url = "https://github.com/air-verse/air/releases/download/v1.67.4/air_1.67.4_windows_amd64.tar.gz"
+url_api = "https://api.github.com/repos/air-verse/air/releases/assets/497980604"
 
 [[tools.gitleaks]]
 version = "8.30.1"
