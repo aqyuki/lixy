@@ -1,0 +1,54 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:recommended", ":semanticCommits", "helpers:pinGitHubActionDigests"],
+  "timezone": "Asia/Tokyo",
+  "enabledManagers": ["gomod", "npm", "mise", "github-actions", "dockerfile", "docker-compose"],
+  "vulnerabilityAlerts": {
+    "enabled": true,
+    "prCreation": "immediate"
+  },
+  "automerge": false,
+  "automergeType": "pr",
+  "ignoreTests": false,
+  "postUpdateOptions": ["gomodUpdateImportPaths", "gomodTidy"],
+  "packageRules": [
+    {
+      "matchManagers": ["gomod"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "Go dependencies",
+      "groupSlug": "gomod-non-major"
+    },
+    {
+      "matchManagers": ["npm"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "npm dependencies",
+      "groupSlug": "npm-non-major",
+      "minimumReleaseAge": "7 days"
+    },
+    {
+      "matchManagers": ["mise"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "mise dependencies",
+      "groupSlug": "mise-non-major",
+      "minimumReleaseAge": "7 days"
+    },
+    {
+      "matchManagers": ["github-actions"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "GitHub Actions dependencies",
+      "groupSlug": "github-actions-non-major"
+    },
+    {
+      "matchManagers": ["dockerfile"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "Dockerfile dependencies",
+      "groupSlug": "dockerfile-non-major"
+    },
+    {
+      "matchManagers": ["docker-compose"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "groupName": "Docker compose dependencies",
+      "groupSlug": "docker-compose-non-major"
+    }
+  ]
+}

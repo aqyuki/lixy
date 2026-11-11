@@ -1,0 +1,60 @@
+version: '2'
+
+linters:
+  default: all
+  disable:
+    # not for me
+    - decorder
+    - embeddedstructfieldcheck
+    - forbidigo
+    - funcorder
+    - gochecknoglobals
+    - gochecknoinits
+    - grouper
+    - ireturn
+    - noinlineerr
+    # deprecated linters
+    - exhaustruct
+    - gomodguard
+    - wsl
+  settings:
+    depguard:
+      rules:
+        main:
+          list-mode: lax
+          files:
+            - $all
+          deny:
+            - pkg: errors
+              desc: use github.com/cockroachdb/errors instead
+            - pkg: github.com/pkg/errors
+              desc: use github.com/cockroachdb/errors instead
+    cyclop:
+      max-complexity: 15
+    gocyclo:
+      min-complexity: 16
+    gocognit:
+      min-complexity: 20
+  exclusions:
+    presets:
+      - comments
+      - common-false-positives
+      - legacy
+      - std-error-handling
+
+formatters:
+  enable:
+    - gci
+    - gofmt
+    - gofumpt
+    - goimports
+    - golines
+  settings:
+    gofumpt:
+      extra:
+        group-params: true
+        clothe-returns: true
+        balance-calls: true
+
+run:
+  timeout: 5m

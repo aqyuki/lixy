@@ -1,0 +1,14 @@
+pre-commit:
+  parallel: true
+  files: 'git diff --name-only --staged'
+  jobs:
+    - name: check by golangci-lint
+      glob: '**/*.go'
+      run: 'golangci-lint fmt --diff {files}'
+
+    - name: check by oxfmt
+      glob: '**/*.{json,yml,yaml,toml,md}'
+      run: 'pnpm oxfmt --check {files}'
+
+    - name: check gitleaks
+      run: 'gitleaks git --staged'

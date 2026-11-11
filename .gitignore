@@ -1,0 +1,16 @@
+# misc
+tmp/
+build/
+
+# mise
+.mise/
+
+# Node
+node_modules/
+
+# Go
+*.out
+
+# secrets
+.env*
+!.env.example
