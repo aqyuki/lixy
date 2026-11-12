@@ -6,13 +6,19 @@ linters:
     # not for me
     - decorder
     - embeddedstructfieldcheck
+    - exhaustruct_v5
     - forbidigo
     - funcorder
+    - gosmopolitan
+    - godox
     - gochecknoglobals
     - gochecknoinits
     - grouper
     - ireturn
     - noinlineerr
+    - recvcheck
+    - testpackage
+    - varnamelen
     # deprecated linters
     - exhaustruct
     - gomodguard
@@ -35,6 +41,12 @@ linters:
       min-complexity: 16
     gocognit:
       min-complexity: 20
+    recvcheck:
+      exclusions:
+        - '*.Validate' # ozzo-validatorは値渡しで受け取った後に
+    wrapcheck:
+      ignore-package-globs:
+        - github.com/go-ozzo/ozzo-validation/*
   exclusions:
     presets:
       - comments
