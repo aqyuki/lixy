@@ -1,0 +1,6 @@
+app:
+  # env: LIXY_APP_ENV
+  # type: local | test | prd
+  # required: true
+  # description: アプリケーションの実行環境
+  env: 'local'
