@@ -10,5 +10,5 @@ pre-commit:
       glob: '**/*.{json,yml,yaml,toml,md}'
       run: 'pnpm oxfmt --check {files}'
 
-    - name: check gitleaks
-      run: 'gitleaks git --staged'
+    - name: check betterleaks
+      run: 'betterleaks git --staged'
