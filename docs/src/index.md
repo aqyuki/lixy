@@ -10,5 +10,5 @@ hero:
       link: ./guide/what-is-lixy
     - theme: alt
       text: 開発者向け
-      link: /development/
+      link: /development/getting-started
 ---
