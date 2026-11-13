@@ -3,6 +3,13 @@ packages:
 
 saveExact: true
 
+# vitepress-plugin-mermaid resolves these transitive dependencies from the site root.
+publicHoistPattern:
+  - '@braintree/sanitize-url'
+  - dayjs
+  - cytoscape-cose-bilkent
+  - cytoscape
+
 allowBuilds:
   esbuild: true
 
