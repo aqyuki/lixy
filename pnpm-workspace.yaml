@@ -1,1 +1,9 @@
+packages:
+  - docs
+
+saveExact: true
+
+allowBuilds:
+  esbuild: true
+
 minimumReleaseAge: 10080 # 7 days (7*24*60 min)

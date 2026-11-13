@@ -1,4 +1,10 @@
 {
+  "private": true,
+  "scripts": {
+    "docs:dev": "pnpm --filter @lixy/docs dev",
+    "docs:build": "pnpm --filter @lixy/docs build",
+    "docs:preview": "pnpm --filter @lixy/docs preview"
+  },
   "devDependencies": {
     "oxfmt": "0.76.0"
   }
