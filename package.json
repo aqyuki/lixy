@@ -6,6 +6,6 @@
     "docs:preview": "pnpm --filter @lixy/docs preview"
   },
   "devDependencies": {
-    "oxfmt": "0.76.0"
+    "oxfmt": "0.77.0"
   }
 }
